@@ -37,4 +37,35 @@ public class TypeCasting {
 
 	}
 
+# project 2
+package assistproject;
+
+class Print {
+
+int value1 = 100;
+private int value2 = 400;
+
+private void msg() {
+
+	System.out.println("Hello java");
+}
+}
+
+public class A {
+
+public static void main(String args[]) {
+
+	Print obj = new Print();
+	System.out.println(obj.value2);// Compile Time error because of value declared as private and cannot be fetched
+									// outside of class
+
+	System.out.println(obj.value1); // since here value1 is accessible because of its declaration is default
+
+	obj.msg();// Here we cpackage assistproject;
+
+
+
+	}
+
+}
 
